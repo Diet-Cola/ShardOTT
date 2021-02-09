@@ -1,0 +1,31 @@
+name: ShardOTT
+version: ${project.version}
+main: com.github.dietcola.shardott.ShardOTT
+api-version: 1.16
+authors: [ Diet_Cola ]
+description: Allow new players a one time teleport while maintaining compatability with a suite of plugins designed for sharding.
+commands:
+  ott:
+    usage: /ott <player>
+    description: Sends an teleport request to the given player.
+    min-args: 1
+    max-args: 1
+    player-only: true
+  ottyes:
+    usage: /ottyes <player>
+    description: Accepts a teleport request from a given player.
+    min-args: 1
+    max-args: 1
+    player-only: true
+  ottno:
+    usage: /ottno <player>
+    description: Denies a teleport request from a given player.
+    min-args: 1
+    max-args: 1
+    player-only: true
+  ottlist:
+    usage: /ottlist
+    description: Shows teleport requests from any player.
+    min-args: 0
+    max-args: 0
+    player-only: true
